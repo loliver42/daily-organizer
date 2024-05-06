@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1570849e99.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>ToDo List <i class="fa-solid fa-clipboard-list"></i></h2>
+      </div>
+      <div class="todo-body">
+        <input
+          type="text"
+          placeholder="Add your items"
+          class="add-input"
+          id="todoText"
+        />
+        <input
+          type="button"
+          value="+"
+          class="button"
+          id="AddUpdateClick"
+          onclick="CreateToDoItems();"
+        />
+        <div class="controls">
+          <h5 id="Alert"></h5>
+          <ul id="list-items" class="list-items"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
